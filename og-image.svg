@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Taiwan Surf Trip for Aussies">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#073139"/>
+      <stop offset="1" stop-color="#041316"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7de2c7"/>
+      <stop offset="1" stop-color="#16836f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="160" cy="90" r="260" fill="#7de2c7" opacity="0.14"/>
+  <circle cx="1080" cy="120" r="230" fill="#ffcf7a" opacity="0.12"/>
+  <path d="M775 104c88 72 117 172 85 300-28 112-111 158-180 112-72-48-67-173-26-275 24-61 68-115 121-137z" fill="url(#land)" opacity="0.95"/>
+  <path d="M860 143c-42 90-57 177-52 302" stroke="#eef8f5" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 22" opacity="0.75"/>
+  <circle cx="812" cy="296" r="18" fill="#ffcf7a"/>
+  <circle cx="845" cy="390" r="18" fill="#ffcf7a"/>
+  <text x="80" y="145" fill="#7de2c7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="5">AUSTRALIA → TAIWAN</text>
+  <text x="78" y="280" fill="#eef8f5" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="-6">Sick of the</text>
+  <text x="78" y="370" fill="#eef8f5" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="-6">same Bali</text>
+  <text x="78" y="460" fill="#eef8f5" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="900" letter-spacing="-6">surf trip?</text>
+  <text x="82" y="545" fill="#a9c5bd" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="600">Uncrowded waves, local surf towns, matched for Aussies.</text>
+</svg>
