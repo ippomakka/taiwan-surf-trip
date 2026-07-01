@@ -68,12 +68,20 @@ nav a:hover { color: var(--ink); }
 .hero {
   min-height: calc(100vh - 68px);
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(280px, .72fr);
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, .58fr);
+  grid-template-areas:
+    "heading heading"
+    "copy art";
+  column-gap: clamp(2rem, 6vw, 5rem);
+  row-gap: clamp(1.8rem, 4vw, 3rem);
+  align-items: end;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.hero-heading { grid-area: heading; }
+.hero-copy { grid-area: copy; }
+.hero-art { grid-area: art; }
 
 .eyebrow {
   margin: 0 0 1rem;
@@ -85,7 +93,7 @@ nav a:hover { color: var(--ink); }
 }
 
 h1, h2, h3 { margin: 0; line-height: 1.04; letter-spacing: -0.055em; }
-h1 { max-width: 760px; font-size: clamp(3.3rem, 8.8vw, 7.4rem); font-weight: 900; }
+h1 { max-width: 1060px; font-size: clamp(3.5rem, 8.6vw, 7.6rem); font-weight: 900; }
 h2 { max-width: 680px; font-size: clamp(2.35rem, 5vw, 4.5rem); font-weight: 880; }
 h3 { font-size: clamp(1.35rem, 2vw, 1.8rem); font-weight: 850; }
 
@@ -283,7 +291,14 @@ summary::marker { color: var(--sea); }
 
 @media (max-width: 920px) {
   nav a:not(:last-child) { display: none; }
-  .hero, .calm-split, .match-section, .guide-strip, .section-heading.wide { grid-template-columns: 1fr; display: grid; }
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "copy"
+      "art";
+  }
+  .calm-split, .match-section, .guide-strip, .section-heading.wide { grid-template-columns: 1fr; display: grid; }
   .steps, .places { grid-template-columns: 1fr; }
   .places article { min-height: auto; }
   .hero-art { min-height: 330px; }
