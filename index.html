@@ -12,7 +12,7 @@
   <meta property="og:title" content="Taiwan Surf Trip for Aussies" />
   <meta property="og:description" content="Fill out one quick form and get matched with a custom Taiwan surf trip quote from friendly local surf stays, camps, lessons and guides." />
   <meta property="og:url" content="https://ippomakka.github.io/taiwan-surf-trip/" />
-  <meta property="og:image" content="https://ippomakka.github.io/taiwan-surf-trip/og-image.svg" />
+  <meta property="og:image" content="https://ippomakka.github.io/taiwan-surf-trip/assets/images/jialeshui-surf.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#fff7e8" />
   <link rel="preload" href="styles.css" as="style" />
@@ -69,9 +69,14 @@
           <span>Manual matching</span>
           <span>Reply within 24–48h</span>
         </div>
+        <figure class="hero-photo">
+          <img src="assets/images/jialeshui-surf.jpg" alt="Surfer on a wave at Jialeshui, Taiwan" width="1800" height="1350" />
+          <figcaption>Real Taiwan surf, not stock Bali energy.</figcaption>
+        </figure>
       </div>
 
       <form id="matchForm" class="match-form hero-form">
+        <span id="match" class="anchor-target" aria-hidden="true"></span>
         <div class="form-intro">
           <p class="eyebrow">Get your custom quote</p>
           <h2>Tell us the trip you want.</h2>
@@ -181,6 +186,23 @@
       <p>Taiwan has smaller surf towns, mountain backdrops, noodle shops after a session, scooters down the coast and a bit more “how did no one tell me about this?” energy.</p>
     </section>
 
+    <section class="section photo-section" aria-label="Real Taiwan surf photos">
+      <div class="section-heading photo-heading">
+        <p class="eyebrow">Real surf photos from Taiwan</p>
+        <h2>So it actually feels like Taiwan.</h2>
+      </div>
+      <div class="photo-grid">
+        <figure class="photo-card large">
+          <img src="assets/images/honeymoon-bay-surfers.jpg" alt="Surfers waiting in the water at Honeymoon Bay in Yilan, Taiwan" width="1800" height="1350" />
+          <figcaption>Honeymoon Bay, Yilan</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/images/jhongjiao-bay-surf-center.jpg" alt="Jhongjiao Bay surf and SUP centre on Taiwan's north coast" width="1800" height="900" />
+          <figcaption>Jhongjiao Bay, north coast</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section areas-panel">
       <p class="eyebrow">We’ll help you choose between</p>
       <div class="area-tags" aria-label="Taiwan surf areas">
@@ -210,7 +232,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>Taiwan Surf Trip — custom surf trip matching for Aussies.</p>
+    <div>
+      <p>Taiwan Surf Trip — custom surf trip matching for Aussies.</p>
+      <p class="image-credit">Images: Jialeshui by Taiwanmag, Honeymoon Bay by KasugaHuang, Jhongjiao Bay by Irvin Chen via Wikimedia Commons.</p>
+    </div>
     <a href="#match">Get quote</a>
   </footer>
 
